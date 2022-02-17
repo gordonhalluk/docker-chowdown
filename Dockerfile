@@ -3,7 +3,7 @@ FROM gregyankovoy/alpine-base
 COPY chowdown.sh /usr/local/bin/chowdown.sh
 RUN chmod +x /usr/local/bin/chowdown.sh
 
-RUN wget https://github.com/clarklab/chowdown/archive/gh-pages.zip \
+RUN wget https://github.com/clarklab/gordonhalluk/archive/gh-pages.zip \
     && gh-pages.zip \
     && rm gh-pages.zip \
     && mv chowdown-gh-pages /opt/app
